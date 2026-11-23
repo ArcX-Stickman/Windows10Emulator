@@ -1,0 +1,13 @@
+{
+  "name": "Win10Browser",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "hostRequirements": { "cpus": 2, "memory": "8gb", "storage": "32gb" },
+  "forwardPorts": [8006],
+  "portsAttributes": {
+    "8006": { "label": "Windows desktop (web viewer)", "onAutoForward": "notify" }
+  },
+  "postCreateCommand": "chmod +x *.sh"
+}

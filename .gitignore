@@ -1,0 +1,4 @@
+*.iso
+*.img
+*.qcow2
+.win10-storage/
